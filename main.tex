@@ -1,0 +1,65 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\bibliography{papers}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+%\def\theme{grey}
+\def\theme{MidnightBlue}
+
+% More predefined colors can be found in 
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+
+\usepackage{simplecv}
+
+\boldname{Jain}{Naman}{N.}
+
+\begin{document}
+
+% Heading
+\headinginline{Naman Jain}{
+    %Website: \website{example.com} \\ 
+    Email: \email{naman.jain@mail.mcgill.ca} \\
+    LinkedIn: \linkedin{naman-jain-966362163} \\
+    GitHub: \github{astronamanj}
+}
+
+% \headingphoto{Name Surname}{
+%     Website: \website{example.com} \\ 
+%     Email: \email{example@example.edu} \\
+%     LinkedIn: \linkedin{name-surname} \\
+%     GitHub: \github{example}
+% }{photo.jpg}
+
+% Page One
+
+\import{sections/}{skills.tex}
+\import{sections/}{experience.tex}
+\import{sections/}{education.tex}
+
+\pagebreak
+
+% Page Two
+%\import{sections/}{publications.tex}
+%\section{Publications}
+
+%\entrybig
+%{\textbf{Journal articles in preparation}}{}
+%{}{}
+%\innerlist{
+	%\entry{Jain, N., $\&$ Parker, L. (2022). Star formation indicators in different regions of projected phase space. To be submitted to Monthly Notices of the Royal Astronomical Society.}
+%	}
+
+%\import{sections/}{teaching.tex}
+%\sidebyside
+%    {\import{sections/}{skills.tex}}
+%    {\import{sections/}{languages.tex}}
+%\import{sections/}{projects.tex}
+%\import{sections/}{extracurricular.tex}
+%\import{sections/}{references.tex}
+
+\end{document}
